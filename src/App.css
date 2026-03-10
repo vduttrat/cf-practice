@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body{
+    color: white;
+    background-color: rgb(12 10 9);
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    border: solid rgb(150 0 0) 8px;
+    min-height: 100vh;
+}
+.hover{
+    transition: 0.5s;
+}
+.hover:hover{
+    scale: 1.05;
+}
