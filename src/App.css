@@ -5,7 +5,7 @@ body{
     background-color: rgb(12 10 9);
     text-align: center;
     margin: 0;
-    padding: 40px;
+    padding: 0;
     border: solid rgb(150 0 0) 8px;
     min-height: 100vh;
 }
@@ -14,4 +14,79 @@ body{
 }
 .hover:hover{
     scale: 1.05;
+}
+
+.animation{
+    animation: fade-in linear;
+    animation-timeline: view();
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        scale: 0.8;
+    }
+    50%{
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity: 0;
+        scale: 0.8;
+    }
+}
+
+.pop_in1{
+    animation: 200ms linear 1 come-in1;
+}
+
+.pop_in2{
+    animation: 400ms linear 1 come-in2;
+}
+
+.pop_in3{
+    animation: 600ms linear 1 come-in3;
+}
+
+@keyframes come-in1{
+    0%{
+        transform: translateY(50px);
+        scale: 0.9;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes come-in2{
+    0%{
+        transform: translateY(50px);
+        scale: 0.9;
+        opacity: 0;
+    }
+    60%{
+        transform: translateY(50px);
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes come-in3{
+    0%{
+        transform: translateY(50px);
+        scale: 0.9;
+        opacity: 0;
+    }
+    60%{
+        transform: translateY(50px);
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
 }
