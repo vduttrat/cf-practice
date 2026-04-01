@@ -90,3 +90,9 @@ body{
         opacity: 1;
     }
 }
+
+.cntr{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
