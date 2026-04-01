@@ -121,7 +121,7 @@ export default function App() {
 
     const UserForm = () => {
         return (
-            <div className='absolute w-[90vw] h-[90vh] bg-[#0C0A09] left-20'>
+            <div className='absolute w-[90vw] h-[90vh] bg-[#0C0A09] cntr'>
                 <h1 className='font-extrabold text-5xl underline mb-40 mt-10 text-red-600'> Enter Codeforces handle </h1>
 
                 <form onSubmit={handleUserSubmit} className='text-2xl font-bold underline mb-10'>
